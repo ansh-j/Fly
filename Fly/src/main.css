@@ -20,7 +20,7 @@ li {
 }
 
 .section {
-  padding: 4rem 0 2rem;
+  padding: 3rem 0 2rem;
 }
 
 .container {
@@ -538,6 +538,9 @@ h2 {
   width: 100%;
 }
 
-.logo {
-  width: clamp(1.6rem, 12%, 2rem);
+.footer {
+  background-color: hsl(180, 17%, 95%);
+}
+.footer .sectionContainer {
+  gap: 2.5rem;
 }/*# sourceMappingURL=main.css.map */

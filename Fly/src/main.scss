@@ -44,7 +44,7 @@ li
 
 .section
 {
-    padding: 4rem 0 2rem;
+    padding: 3rem 0 2rem;
 }
 
 .container
@@ -780,7 +780,16 @@ h2{
 
 // FOOTER
 
-.logo{
-    width: clamp(1.6rem,12%,2rem);
+// .logo{
+//     width: clamp(1.6rem,12%,2rem);
+// }
+.footer
+{
+    background-color: $secondaryColor;
+    
+    .sectionContainer
+    {
+        gap: 2.5rem;
+    }
 }
 
