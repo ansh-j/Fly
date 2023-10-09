@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500&family=Montserrat:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  background: hsl(0, 0%, 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.none {
+  display: none;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  background: hsl(225, 50%, 48%);
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+}
+.btn a {
+  -moz-column-gap: hsl(0, 0%, 100%);
+       column-gap: hsl(0, 0%, 100%);
+}
+.btn:hover {
+  background-color: hsl(225, 56%, 59%);
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+}
+
+input {
+  font-size: 100%;
+  color: rgb(145, 145, 145);
+}
+
+p {
+  font-size: 13px;
+  color: rgb(145, 145, 145);
+  line-height: 22px;
+}
+
+h4 {
+  padding: 1rem 0;
+  font-weight: 700;
+  color: hsl(0, 0%, 12%);
+}
+
+h2 {
+  font-size: 25px;
+  padding: 1rem 0;
+  color: hsl(0, 0%, 12%);
+}
+
+.navBar {
+  position: fixed;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1000;
+}
+.navBar .navBarOne, .navBar .navBarTwo {
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+.navBar .navBarOne {
+  background: hsl(180, 17%, 95%);
+}
+.navBar .navBarOne .icon:hover {
+  color: hsl(225, 50%, 48%);
+}
+.navBar .navBarOne .atb {
+  gap: 1rem;
+}
+.navBar .navBarOne span {
+  color: hsl(0, 0%, 12%);
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.navBar .navBarOne span:hover {
+  color: hsl(225, 50%, 48%);
+  font-weight: 700;
+}
+.navBar .navBarTwo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 3rem;
+  padding: 1.5rem 1rem;
+  position: fixed;
+  transition: 0.3s ease-in-out;
+}
+.navBar .navBarTwo .logoDiv .logo {
+  width: clamp(1.6rem, 12%, 2rem);
+}
+@media screen and (max-width: 768px) {
+  .navBar .navBarTwo .navBarMenu {
+    position: absolute;
+    background: hsl(180, 17%, 95%);
+    padding: 1.5rem;
+    border-radius: 10px;
+    top: 5rem;
+    right: -50%;
+    width: 80%;
+    transform: translateX(50%);
+    z-index: 2000;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border: 3px solid hsl(0, 0%, 100%);
+    transition: 0.4s ease-in-out;
+  }
+  .navBar .navBarTwo .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .navBar .navBarTwo .menu .listItem {
+    padding: 0.5rem 0;
+    cursor: pointer;
+    color: hsl(0, 0%, 12%);
+  }
+  .navBar .navBarTwo .menu .listItemhover {
+    color: hsl(225, 50%, 48%);
+    font-weight: 700;
+  }
+  .navBar .navBarTwo .btnOne {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .navBar .navBarTwo .btnTwo {
+    display: none;
+  }
+  .navBar .navBarTwo .toggleIcon .icon {
+    font-size: 30px;
+    color: hsl(0, 0%, 12%);
+  }
+  .navBar .navBarTwo .showNavBar {
+    right: 50%;
+    transition: 0.5s ease-in-out;
+  }
+}
+.navBar .navbar_With_Bg {
+  background: hsl(180, 17%, 95%);
+  padding: 0.5rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.home {
+  padding-top: 10rem;
+  text-align: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+.home .mainText {
+  color: hsl(0, 0%, 12%);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 2.5rem;
+}
+.home .homeImages {
+  width: 100%;
+  margin: 1rem auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5rem;
+}
+.home .homeImages .videoDiv {
+  width: 100%;
+}
+.home .homeImages .videoDiv .video {
+  border-radius: 10rem;
+}
+.home .homeImages .plane {
+  position: absolute;
+  width: 60%;
+  top: 35%;
+  left: 25%;
+}
+
+.search .sectionContainer {
+  width: 100%;
+  padding-bottom: 1rem;
+  border: 2px solid hsl(0, 0%, 96%);
+  border-radius: 16px;
+  row-gap: 2rem;
+}
+.search .sectionContainer .btns {
+  background: hsl(180, 17%, 95%);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+.search .sectionContainer .btns .singleBtn {
+  padding: 0.8rem 1.5rem;
+  font-size: 13px;
+  border-radius: 3rem;
+  width: 80%;
+  text-align: center;
+}
+.search .sectionContainer .btns .singleBtn:hover {
+  background: hsl(225, 50%, 48%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  transition: 0.4s ease;
+}
+.search .sectionContainer .btns .active {
+  background: hsl(225, 50%, 48%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+.search .sectionContainer .searchInputs {
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 30px;
+}
+.search .sectionContainer .searchInputs .singleInput .iconDiv {
+  padding: 16px 10px;
+  border-radius: 3rem;
+  background: hsl(180, 17%, 95%);
+  margin-right: 1rem;
+}
+.search .sectionContainer .searchInputs .singleInput .iconDiv .icon {
+  color: hsl(0, 0%, 12%);
+  opacity: 0.7;
+}
+.search .sectionContainer .searchInputs .singleInput .texts h4 {
+  padding-top: 0;
+  padding-bottom: 0.7rem;
+  color: hsl(0, 0%, 12%);
+  font-weight: 700;
+}
+.search .sectionContainer .searchInputs .singleInput .texts input {
+  width: 95%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.search .sectionContainer .searchInputs .singleInput .texts input::-moz-placeholder {
+  font-size: 12px;
+  opacity: 0.5;
+}
+.search .sectionContainer .searchInputs .singleInput .texts input::placeholder {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.support {
+  width: 100%;
+}
+.support .sectionContainer {
+  width: 100%;
+}
+.support .sectionContainer .titlesDiv {
+  text-align: center;
+}
+.support .sectionContainer .titlesDiv small {
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: hsl(0, 0%, 12%);
+  line-height: 1.5rem;
+}
+.support .sectionContainer .infoDiv {
+  width: 100%;
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+.support .sectionContainer .infoDiv .textDiv {
+  gap: 1.5rem;
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .number {
+  background: hsl(225, 50%, 48%);
+  padding: 8px 12px 5px;
+  width: 40px;
+  border-radius: 3rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+  color: hsl(0, 0%, 100%);
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .colorOne {
+  background-color: hsl(28, 100%, 82%);
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .colorTwo {
+  background-color: hsl(15, 74%, 70%);
+}
+.support .sectionContainer .infoDiv .imgDiv {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+.support .sectionContainer .infoDiv .imgDiv .gridImage:nth-child(2) {
+  border-radius: 15rem;
+  width: clamp(1rem, 35%, 22rem);
+}
+.support .sectionContainer .infoDiv .imgDiv .gridImage {
+  border-radius: 10rem;
+  width: clamp(1rem, 20%, 12rem);
+}
+
+.info {
+  background: hsl(180, 17%, 95%);
+}
+.info .infoContainer .titleDiv {
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+.info .infoContainer .cardsDiv {
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.info .infoContainer .cardsDiv .singleCard {
+  background: hsl(0, 0%, 100%);
+  padding: 3rem 2rem;
+  border-radius: 10rem;
+  gap: 1rem;
+  text-align: center;
+  margin: auto;
+  height: 320px;
+  width: 90%;
+  max-width: 250px;
+}
+.info .infoContainer .cardsDiv .iconDiv {
+  justify-content: center;
+  margin: auto;
+  background-color: hsl(225, 50%, 48%);
+  width: -moz-max-content;
+  width: max-content;
+  height: 55px;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+.info .infoContainer .cardsDiv .iconDiv .icon {
+  color: hsl(0, 0%, 100%);
+}
+.info .infoContainer .cardsDiv .cardTitle {
+  color: hsl(0, 0%, 12%);
+  font-weight: 700;
+}
+.info .infoContainer .cardsDiv .colorOne {
+  background: hsl(28, 100%, 82%);
+}
+.info .infoContainer .cardsDiv .colorTwo {
+  background: hsl(15, 74%, 70%);
+}
+
+.lounge .sectionContainer {
+  gap: 1.5rem;
+}
+.lounge .sectionContainer .imgDiv {
+  margin: auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+.lounge .sectionContainer .imgDiv img {
+  width: 50%;
+  max-width: 500px;
+  border-radius: 10rem;
+}
+.lounge .sectionContainer .textDiv .grids {
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+.lounge .sectionContainer .textDiv .grids .singleGrid .gridTitle {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 12%);
+}
+
+.travelers .sectionContainer {
+  text-align: center;
+}
+.travelers .sectionContainer .travelersContainer {
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler {
+  position: relative;
+  height: 320px;
+  width: 85%;
+  max-width: 250px;
+  overflow: hidden;
+  border-radius: 10rem;
+  gap: 1rem;
+  margin: auto;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler .destinationImage, .travelers .sectionContainer .travelersContainer .singleTraveler .travelerImage, .travelers .sectionContainer .travelersContainer .singleTraveler .travelerName {
+  position: absolute;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler .destinationImage {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler .travelerImage {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  bottom: 20px;
+  left: 40%;
+  transform: translate(-50%);
+  border: 5px solid white;
+  transition: 0.4s ease-in-out;
+  animation: animated 2.3s infinite;
+}
+@keyframes animated {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler .travelerName {
+  bottom: -100%;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: hsl(0, 0%, 93%);
+  padding: 1.5rem 1rem;
+  transition: 0.4s ease-in-out;
+  animation: animatedBorder 2.3s infinite;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler .travelerName span {
+  display: block;
+  color: hsl(0, 0%, 12%);
+  font-weight: 700;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler .travelerName p {
+  color: hsl(225, 50%, 48%);
+  font-style: italic;
+}
+@keyframes animatedBorder {
+  0% {
+    border-radius: 0;
+  }
+  50% {
+    border-radius: 2rem;
+  }
+  100% {
+    border-radius: 0;
+  }
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler:hover .travelerName {
+  bottom: 0;
+  transition: 0.5s ease-in-out;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler:hover .travelerImage {
+  bottom: 110px;
+  transition: 0.5s ease-in-out;
+}
+
+.subscribe {
+  background: hsl(180, 17%, 95%);
+}
+.subscribe .sectionContainer {
+  text-align: center;
+}
+.subscribe .sectionContainer .inputDiv {
+  margin-top: 1rem;
+  flex-direction: column;
+  background: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+}
+.subscribe .sectionContainer .inputDiv input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem 0.5rem;
+}
+.subscribe .sectionContainer .inputDiv input:placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+}
+.subscribe .sectionContainer .inputDiv .btn {
+  width: 100%;
+}
+
+.logo {
+  width: clamp(1.6rem, 12%, 2rem);
+}/*# sourceMappingURL=main.css.map */
