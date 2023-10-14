@@ -5,13 +5,18 @@ import logo from '../assets/logo.png'
 import {TiSocialFacebook} from 'react-icons/ti'
 import { AiFillYoutube, AiOutlineTwitter } from 'react-icons/ai'
 import {FaPinterestP} from 'react-icons/fa'
+
+
+
 const Footer = () => {
+
+
   return (
     <div className="footer">
 
         <div className="sectionContainer container grid">
 
-          <div className="gridOne">
+          <div  className="gridOne flex">
             <div className="logoDiv">
               <img src={logo} className='logo' />
             </div>
@@ -29,7 +34,7 @@ const Footer = () => {
 
             <span className="linkTitle">Information</span>
             <li>
-              <a href="">Home</a>
+              <a href="#">Home</a>
             </li>
             <li>
               <a href="">Explore</a>
@@ -71,9 +76,9 @@ const Footer = () => {
             </li>
           </div>
 
-          <div className="footerLinks">
+          <div  className="footerLinks">
 
-            <span className="linkTitle">Quick Guide </span>
+            <span className="linkTitle">Information </span>
             <li>
               <a href="">Chauffer</a>
             </li>
@@ -94,6 +99,11 @@ const Footer = () => {
             </li>
           </div>
 
+        </div>
+
+        <div className="copyRightDiv flex">
+
+            <p>Courtesy Design | Developed by <a href="https//emailto-anshvardhanavj@gmail.com" target='_blank'> Ansh Jasrotia</a></p>
         </div>
     </div>
   )
