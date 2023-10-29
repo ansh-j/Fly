@@ -24,10 +24,10 @@ const Home = () => {
     <div className='home flex container'>
       
       <div className="mainText">
-        <h1 data-aos='fade-up' data-aos-duration='2500' >Create Ever-lasting Memories With Us</h1>
+        <h1 data-aos='fade-up' data-aos-duration='1500' >Create Ever-lasting Memories With Us</h1>
       </div>
 
-      <div  data-aos='fade-down' data-aos-duration='2500' className="homeImages flex">
+      <div  data-aos='fade-down' data-aos-duration='1500' className="homeImages flex">
         
         <div className="videoDiv">
           <video  ref={videoRef}  onCanPlay={() => setPlayBack()} src={Video} autoPlay muted loop className="video"></video>

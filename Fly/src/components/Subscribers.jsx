@@ -12,7 +12,7 @@ const Subscribers = () => {
 
   return (
     <div className="subscribe section ">
-      <div  data-aos='fade-up' data-aos-duration='2500'  className="sectionContainer container ">
+      <div  data-aos='fade-up' data-aos-duration='1500'  className="sectionContainer container ">
 
         <h2>Subscribe Newsletters & get latest News</h2>
         <div className="inputDiv flex">

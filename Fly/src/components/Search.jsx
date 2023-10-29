@@ -16,14 +16,14 @@ const Search = () => {
 
   return (
     <div className="search container section">
-      <div data-aos='fade-up' data-aos-duration='2500'  className="sectionContainer grid">
+      <div data-aos='fade-up' data-aos-duration='1500'  className="sectionContainer grid">
         <div className="btns flex">
           <div className="singleBtn">Economy</div>
           <div className="singleBtn">Business Class</div>
           <div className="singleBtn">First Class</div>
         </div>
 
-        <div data-aos='fade-up' data-aos-duration='2000'  className="searchInputs grid">
+        <div data-aos='fade-up' data-aos-duration='1000'  className="searchInputs grid">
 
           <div className="singleInput flex">
 

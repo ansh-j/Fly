@@ -29,7 +29,7 @@ const Support = () => {
 
           <div className="textDiv grid">
 
-            <div data-aos='fade-down' data-aos-duration='2500' className="singleInfo">
+            <div data-aos='fade-down' data-aos-duration='1500' className="singleInfo">
               <span className="number">
                 01
               </span>
@@ -38,7 +38,7 @@ const Support = () => {
 
             </div>
             
-            <div data-aos='fade-down' data-aos-duration='3500' className="singleInfo">
+            <div data-aos='fade-down' data-aos-duration='2500' className="singleInfo">
               <span className="number colorOne">
                 02
               </span>
@@ -47,7 +47,7 @@ const Support = () => {
 
             </div>
 
-            <div data-aos='fade-down' data-aos-duration='4500' className="singleInfo">
+            <div data-aos='fade-down' data-aos-duration='3500' className="singleInfo">
               <span className="number colorTwo">
                 03
               </span>
@@ -58,7 +58,7 @@ const Support = () => {
 
           </div>       
 
-          <div data-aos='fade-up' data-aos-duration='2500'  className="flex imgDiv">
+          <div data-aos='fade-up' data-aos-duration='1500'  className="flex imgDiv">
               
             <img src={gridImg1} alt="" className='gridImage'/>
             <img src={gridImg2} alt="" className='gridImage'/>
