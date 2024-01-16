@@ -352,6 +352,13 @@ h2{
                     transition: .4s ease;
                 }
 
+                .active
+                {
+                    background: $primaryColor;
+                    color: $whiteColor;
+                    font-weight: 500;
+                }
+
             }
             
             .active

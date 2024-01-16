@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 
 import {HiOutlineLocationMarker} from 'react-icons/hi'
 import {RiAccountPinCircleLine} from 'react-icons/ri'
@@ -14,13 +14,26 @@ const Search = () => {
     Aos.init({duration:2000})
   },[])
 
+  
+
+  const func = (e)=>
+  {
+    const ele = document.getElementsByClassName("singleBtn");
+    console.log(ele);
+    ele.currentTarget.classList.remove("active");
+    
+    e.currentTarget.classList.add("active");
+    
+
+  }
+
   return (
     <div className="search container section">
       <div data-aos='fade-up' data-aos-duration='1500'  className="sectionContainer grid">
         <div className="btns flex">
-          <div className="singleBtn">Economy</div>
-          <div className="singleBtn">Business Class</div>
-          <div className="singleBtn">First Class</div>
+          <div onClick={func} className="singleBtn">Economy</div>
+          <div onClick={func} className="singleBtn">Business Class</div>
+          <div onClick={func} className="singleBtn">First Class</div>
         </div>
 
         <div data-aos='fade-up' data-aos-duration='1000'  className="searchInputs grid">
